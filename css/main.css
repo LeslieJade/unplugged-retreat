@@ -331,7 +331,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   width: 90%;
 }
 
@@ -372,13 +372,13 @@ input[type=button] {
 
 .reviews h2 {
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 95%;
 }
 
 .reviews h3 {
   margin: 20px 0;
-  width: 55%;
+  width: 65%;
 }
 
 /*---------- Mobile Styles - About Page ----------*/
@@ -427,7 +427,7 @@ input[type=button] {
 }
 
 .contact-section h2 {
-  margin: 20px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .contact-section h4 {
@@ -435,7 +435,7 @@ input[type=button] {
 }
 
 .contact-content {
-  margin: 0 0 25px 0;
+  margin: 0;
   text-align: left;
 }
 
@@ -646,7 +646,7 @@ input[type=button] {
 
   footer .contact,
   footer .social {
-    width: 40%;
+    width: 35%;
   }
 
   footer .copyright {
@@ -719,7 +719,7 @@ input[type=button] {
 
   .reviews h3 {
     margin: 0;
-    width: 75%;
+    width: 80%;
   }
 
   .reviews figure,
@@ -752,6 +752,10 @@ input[type=button] {
     padding-bottom: 45%;
   }
 
+  .contact-section .content-wrapper {
+    margin: 75px 0;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -770,6 +774,7 @@ input[type=button] {
 /*---------- Tablet Styles - FAQ Page ----------*/
 
   .faq .content-wrapper {
+    align-items: flex-start;
     justify-content: space-between;
     margin: 90px 0;
   }
@@ -838,6 +843,7 @@ input[type=button] {
 
   /* Hero Area */
   .hero-area .content-wrapper {
+    margin-top: 50px;
     min-height: 575px;
   }
 
