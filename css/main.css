@@ -89,7 +89,7 @@ textarea {
 /*---------- Base Styles ----------*/
 
 .content-wrapper {
-  margin: 50px 0;
+  margin: 25px 0;
   width: 90%;
 }
 
@@ -113,6 +113,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #527158;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
@@ -124,6 +128,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 h3 {
@@ -134,10 +139,10 @@ h3 {
 }
 
 h4 {
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight:500;
-  margin: 20px 0;
 }
 
 p {
@@ -220,12 +225,12 @@ footer {
 }
 
 footer .content-wrapper {
-  margin: 50px 0;
+  margin: 40px 0;
   width: 55%;
 }
 
 footer .contact {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 footer p {
@@ -240,12 +245,17 @@ footer .social-icons {
 
 footer .social-icons p {
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
   display: flex;
+  font-size: 1em;
+  height: 35px;
   justify-content: center;
+  width: 35px;
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 /*---------- Mobile Styles - Homepage ----------*/
@@ -276,6 +286,10 @@ aside {
   justify-content: center;
 }
 
+aside p {
+  margin-top: 0;
+}
+
 .form input {
   margin: 10px 0;
 }
@@ -299,7 +313,7 @@ input[type=button] {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
@@ -317,7 +331,8 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  width: 90%;
 }
 
 .features article {
@@ -330,6 +345,11 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.fontawesome-icon i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -351,8 +371,8 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 30px;
   line-height: 1;
+  margin-bottom: 30px;
   width: 95%;
 }
 
@@ -378,6 +398,22 @@ input[type=button] {
   margin-bottom: 15px;
 }
 
+.map figure {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 125%;
+  position: relative;
+  width: 100%;
+}
+
+.map iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .contact-section {
   align-items: center;
   background-color: #2a423a;
@@ -386,8 +422,20 @@ input[type=button] {
   justify-content: center;
 }
 
-.contact-content {
+.contact-section .content-wrapper {
+  margin: 50px 0;
+}
+
+.contact-section h2 {
+  margin: 20px 0 10px 0;
+}
+
+.contact-section h4 {
   margin: 0;
+}
+
+.contact-content {
+  margin: 0 0 25px 0;
   text-align: left;
 }
 
@@ -413,7 +461,11 @@ input[type=button] {
 
 .faq h4 {
   line-height: 1.333;
-  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+.faq p {
+  margin: 10px 0;
 }
 
 .faq-content {
@@ -513,7 +565,7 @@ input[type=button] {
 
   /* Base Styles */
   .content-wrapper {
-    margin: 100px 0;
+    margin: 55px 0;
     max-width: 640px;
   }
 
@@ -526,6 +578,8 @@ input[type=button] {
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
+    margin: 15px 0;
+
   }
 
   h3 {
@@ -533,10 +587,14 @@ input[type=button] {
     line-height: 1.25;
   }
 
+  p {
+    font-size: 1em;
+  }
+
   /* Header Styles */
   header {
   justify-content: space-around;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 
   header .content-wrapper {
@@ -545,7 +603,7 @@ input[type=button] {
   }
 
   header .content-wrapper figure {
-    width: 30%;
+    width: 35%;
   }
 
   .header-divider {
@@ -568,7 +626,7 @@ input[type=button] {
 
   footer h4 {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin: 0 0 35px 0;
   }
 
   footer p {
@@ -584,6 +642,11 @@ input[type=button] {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .contact,
+  footer .social {
+    width: 40%;
   }
 
   footer .copyright {
@@ -609,13 +672,22 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     margin: 0;
-    width: 40%;
+    width: 42.5%;
+  }
+
+  input[type=text] {
+    padding: 10px 20px;
+  }
+
+  input[type=button] {
+    margin: 5px 0;
+    padding: 10px 20px;
   }
 
   /* Features */
 
   .features h2 {
-    margin-bottom: 20px;
+    width: 100%;
   }
 
   .features article {
@@ -626,11 +698,20 @@ input[type=button] {
     justify-content: center;
   }
 
+  .fontawesome-icon i {
+    font-size: 4.5em;
+    margin-bottom: 25px;
+  }
+
   .features .features-item-description {
     width: 60%;
   }
 
   /* Reviews */
+
+  .reviews .content-wrapper {
+    margin: 75px 0;
+  }
 
   .reviews h2 {
     width: 85%;
@@ -646,6 +727,9 @@ input[type=button] {
     width: 49%;
   }
 
+  .reviews p {
+    font-size: .9em;
+  }
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -658,11 +742,14 @@ input[type=button] {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
   }
 
-  .mission-content P {
+  .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -684,6 +771,7 @@ input[type=button] {
 
   .faq .content-wrapper {
     justify-content: space-between;
+    margin: 90px 0;
   }
 
   .faq-content {
@@ -691,13 +779,14 @@ input[type=button] {
   }
 
   .faq h2 {
+    margin-bottom: 25px;
     width: 100%;
   }
 
-  .faq h4,
   .faq p {
-    font-size: .875em;
-    line-height: 1.125;
+    font-size: 1em;
+    line-height: 1.25;
+    margin-bottom: 10px;
   }
 }
 
@@ -706,6 +795,7 @@ input[type=button] {
 
   /* Base Styles */
   .content-wrapper {
+    margin: 75px 0;
     max-width: 960px;
   }
 
@@ -715,7 +805,7 @@ input[type=button] {
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 3em;
   }
 
   h3,
@@ -729,9 +819,6 @@ input[type=button] {
   }
 
   /* Header - Footer Styles */
-  header {
-    padding: 15px 0;
-  }
 
   header nav {
     width: 15%;
@@ -740,6 +827,12 @@ input[type=button] {
   footer h4 {
     font-size: 1.875em;
   }
+
+  footer .social-icons p {
+    font-size: 1.5em;
+    height: 45px;
+    width: 45px;
+}
 
 /*---------- Desktop Styles - Homepage ----------*/
 
@@ -756,6 +849,15 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 35%;
+  }
+
+  input[type=text] {
+    padding: 15px 20px;
+  }
+
+  input[type=button] {
+    margin: 5px 0;
+    padding: 15px 20px;
   }
 
   .form-description p {
@@ -777,12 +879,14 @@ input[type=button] {
   }
 
   /* Reviews */
-  .reviews h2 {
-    padding-bottom: 50px;
-  }
 
   .reviews .content-wrapper{
-    margin: 50px 0;
+    margin: 75px 0;
+  }
+
+  .reviews h2 {
+    padding-bottom: 25px;
+    width: 100%;
   }
 
   .reviews article div {
@@ -790,9 +894,16 @@ input[type=button] {
   }
 
 /*---------- Desktop Styles - About Page ----------*/
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2 {
     width: 95%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 100%;
   }
 
   .contact-content {
@@ -813,7 +924,6 @@ input[type=button] {
   .faq h4,
   .faq p {
     font-size: 1.125em;
-    line-height: 1;
   }
 }
 
