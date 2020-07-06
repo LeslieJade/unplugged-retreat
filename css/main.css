@@ -728,8 +728,9 @@ input[type=button] {
   }
 
   .reviews p {
-    font-size: .9em;
+    font-size: .95em;
   }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -893,6 +894,10 @@ input[type=button] {
   .reviews h2 {
     padding-bottom: 25px;
     width: 100%;
+  }
+
+  .reviews p {
+    font-size: 1.125em;
   }
 
   .reviews article div {
