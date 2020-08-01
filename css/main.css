@@ -579,7 +579,6 @@ input[type=button] {
     font-size: 2.25em;
     line-height: 1.333;
     margin: 15px 0;
-
   }
 
   h3 {
@@ -595,7 +594,7 @@ input[type=button] {
   header {
   justify-content: space-around;
   padding: 25px 0;
-}
+  }
 
   header .content-wrapper {
     justify-content: space-between;
@@ -838,7 +837,7 @@ input[type=button] {
     font-size: 1.5em;
     height: 45px;
     width: 45px;
-}
+  }
 
 /*---------- Desktop Styles - Homepage ----------*/
 

@@ -12,6 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "elliptic": ">=6.5.3"
+    "lodash": ">=4.17.19"
     "parcel-bundler": "^1.12.4"
   }
 }
